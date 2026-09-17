@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessible Dashboard</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <aside aria-label="Sidebar">
+    <ul>
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+    </ul>
+  </aside>
+
+  <section>
+    <article>
+      <h1>Dashboard Overview</h1>
+
+      <table>
+        <caption>User Data</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kundan</td>
+            <td>kundan@email.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button onclick="openModal()">Open Modal</button>
+    </article>
+  </section>
+</main>
+
+<div id="modal" role="dialog" aria-modal="true" hidden>
+  <div>
+    <p>This is an accessible modal</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Dashboard</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
